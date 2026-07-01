@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO SECTION -->
+    <div class="relative h-screen overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="Ship.jpeg"
+            class="w-full h-full object-cover object-center"
+            alt="Ship">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+
+        <!-- Navbar -->
+        <nav class="absolute top-0 left-0 w-full z-20 text-white">
+            <div class="flex justify-between items-center px-5 md:px-10 py-5">
+
+                <img src="weldedron_logo.png" class="h-8 md:h-12 w-auto md:mb-0 pb-1 md:pb-0">
+
+
+                <ul class="hidden md:gap-3 md:flex md:text-[7px] md:gap-2 lg:text-[10px] xl:flex items-center gap-6 text-sm font-medium">
+
+                    <li class="hover:text-[#8DD921] cursor-pointer">HOME</li>
+                    <li class="hover:text-[#8DD921] cursor-pointer">ABOUT US</li>
+                    <li class="hover:text-[#8DD921] cursor-pointer">SERVICES</li>
+                    <li class="hover:text-[#8DD921] cursor-pointer">SOLUTIONS</li>
+                    <li class="hover:text-[#8DD921] cursor-pointer">NETWORK</li>
+                    <li class="hover:text-[#8DD921] cursor-pointer">CAREERS</li>
+                    <li class="hover:text-[#8DD921] cursor-pointer">CONTACT US</li>
+
+                    <li>
+                        <a href="#"
+                        class="bg-[#8DD921] text-black px-5 py-3 font-semibold border-2 border-transparent hover:bg-transparent hover:text-white hover:bg-lime-400 hover:border-lime-400 duration-300">
+                            GET A QUOTE →
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="absolute top-1/2 left-5 md:left-16 -translate-y-1/2 z-20 text-white md:mt-0 mt-9 pr-5 md:pr-10">
+
+            <h1 class="text-3xl md:text-6xl font-bold leading-none">
+                MOVING FRESHNESS.
+            </h1>
+
+            <h1 class="text-4xl md:text-6xl font-bold leading-none mt-1">
+                <span class="text-[#8DD921]">DELIVERING</span> TRUST.
+            </h1>
+
+            <p class="md:mt-4 mt-2 max-w-xl text-sm md:text-lg leading-7 text-gray-200">
+                Weldedron is a leading cold chain logistics provider,
+                specializing in reefer transportation, fresh produce exports,
+                and end-to-end supply chain solutions.
+            </p>
+
+            <!-- Features -->
+            <div class="flex flex-col md:flex-row gap-8 md:mt-8 mt-4">
+
+                <div class="flex items-center gap-3">
+
+                    <i class="fa-solid fa-snowflake text-3xl text-[#8DD921]"></i>
+
+                    <div>
+                        <h3 class="font-semibold uppercase">
+                            Reefer
+                        </h3>
+
+                        <h3 class="font-semibold uppercase">
+                            Specialists
+                        </h3>
+                    </div>
+
+                   <div class="md:border-r-2 md:border-r-white md:h-[40px] md:w-1"></div>
+                </div>
+
+                <div class="flex items-center gap-3">
+
+                    <i class="fa-solid fa-leaf text-3xl text-[#8DD921]"></i>
+
+                    <div>
+                        <h3 class="font-semibold uppercase">
+                            Fresh Produce
+                        </h3>
+
+                        <h3 class="font-semibold uppercase">
+                            Exports
+                        </h3>
+                    </div>
+
+                    <div class="md:border-r-2 md:border-r-white md:h-[40px] md:w-1"></div>
+                </div>
+
+                <div class="flex items-center gap-3">
+
+                    <i class="fa-solid fa-shield-halved text-3xl text-[#8DD921]"></i>
+
+                    <div>
+                        <h3 class="font-semibold uppercase">
+                            Reliable. Safe.
+                        </h3>
+
+                        <h3 class="font-semibold uppercase">
+                            On Time
+                        </h3>
+                    </div>
+
+                    <div class="md:border-r-2 md:border-r-white md:h-[40px] md:w-1"></div>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+
+            <button
+                class="mt-10 bg-[#8DD921] text-black font-semibold px-8 py-4 hover:bg-lime-400 duration-300 hover:bg-lime-700 hover:text-white md:mb-0 mb-10">
+
+                EXPLORE OUR SERVICES →
+
+            </button>
+
+        </div>
+
+        <div class="hidden md:flex absolute md:bottom-28 lg:bottom-[260px] lg:right-[30px] right-4 lg:right-12 z-20 text-white bg-[#4c4f4e] bg-black/40 p-3">
+            <div>
+                <p>TEMPERATURE CONTROLLED</p>
+                <p>TO PERFECTION</p>
+                <h3>-25°C</h3>
+                <p>ACROSS OUR GLOBAL NETWORK</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden absolute left-1/2 -translate-x-1/2 -bottom-10 md:flex md:justify-evenly md:items-center px-4 md:px-6 py-4 text-white rounded-t-3xl bg-green-900 w-[92%] md:w-[90%] max-w-[790px]">
+            <div class="md:flex md:justify-center md:items-center md:flex-col font-medium border-r-2 border-white pr-4">
+                <div class="flex flex-row justify-center items-center pb-1">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <p>10+</p>
+                <p>YEARS OF</p>
+                <p>EXCELLENCE</p>
+            </div>
+            <div class="md:flex md:justify-center md:items-center md:flex-col font-medium border-r-2 border-white pr-4">
+                <div class="flex flex-row justify-center items-center pb-1">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p>10+</p>
+                <p>YEARS OF</p>
+                <p>EXCELLENCE</p>
+            </div>
+            <div class="md:flex md:justify-center md:items-center md:flex-col font-medium border-r-2 border-white pr-4">
+                <div class="flex flex-row justify-center items-center pb-1">
+                   <i class="fa-solid fa-truck"></i>
+                </div>
+                <p>10+</p>
+                <p>YEARS OF</p>
+                <p>EXCELLENCE</p>
+            </div>
+            <div class="md:flex md:justify-center md:items-center md:flex-col font-medium">
+                <div class="flex flex-row justify-center items-center pb-1">
+                    <i class="fa-solid fa-box"></i>
+                </div>
+                <p>10+</p>
+                <p>YEARS OF</p>
+                <p>EXCELLENCE</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="md:flex flex justify-center items-center md:mt-[90px] mt-3 flex-col text-center p-5 md:p-0">
+                <p class="text-lime-300 font-medium">WHAT WE DO</p>
+                <h2 class="md:text-3xl text-[22px] font-bold text-green-950 pb-3">Completed Cold Chain & Logistics Solutions</h2>
+                <p class="md:text-[16px] text-[14px] ">From farm to fork, we ensure your cargo stays fresh, safe and on time.</p>
+                <p>Our integrated solutions are designed to deliver value at every step.</p>
+            </div>
+
+            <div class="container mx-auto px-5 lg:px-10 py-12">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col relative hover:shadow-[0px_9px_30px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all ease-in duration-200">
+                        <img src="Truck.jpeg" class="w-full h-52 object-cover">
+
+                        <div class="absolute left-6 top-44 w-12 h-12 rounded-full bg-lime-300 flex items-center justify-center shadow-md">
+                            <i class="fa-regular fa-snowflake text-xl"></i>
+                        </div>
+
+                        <div class="px-6 pt-10 pb-6 flex-1">
+                            <h3 class="text-2xl font-bold mb-4">
+                                Reefer Transportation
+                            </h3>
+
+                            <p class="text-gray-600 leading-7">
+                                Specialized reefer fleet for temperature-sensitive cargo with real-time monitoring.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col relative hover:shadow-[0px_9px_30px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all ease-in duration-200">
+                        <img src="Fruits.jpeg" class="w-full h-52 object-cover">
+
+                        <div class="absolute left-6 top-44 w-12 h-12 rounded-full bg-lime-300 flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-leaf text-xl"></i>
+                        </div>
+
+                        <div class="px-6 pt-10 pb-6 flex-1">
+                            <h3 class="text-2xl font-bold mb-4">
+                                Fruits & Vegetable Exports
+                            </h3>
+
+                            <p class="text-gray-600 leading-7">
+                                Premium quality produce delivered to global markets with care and compliance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col relative hover:shadow-[0px_9px_30px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all ease-in duration-200">
+                        <img src="Cold-storage.jpeg" class="w-full h-52 object-cover">
+
+                        <div class="absolute left-6 top-44 w-12 h-12 rounded-full bg-lime-300 flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-cube text-xl"></i>
+                        </div>
+
+                        <div class="px-6 pt-10 pb-6 flex-1">
+                            <h3 class="text-2xl font-bold mb-4">
+                                Cold Storage & Handling
+                            </h3>
+
+                            <p class="text-gray-600 leading-7">
+                                State-of-the-art cold storage facilities ensuring quality and freshness.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col relative hover:shadow-[0px_9px_30px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all ease-in duration-200">
+                        <img src="Supply-Chain.jpeg" class="w-full h-52 object-cover">
+
+                        <div class="absolute left-6 top-44 w-12 h-12 rounded-full bg-lime-300 flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-ship text-xl"></i>
+                        </div>
+
+                        <div class="px-6 pt-10 pb-6 flex-1">
+                            <h3 class="text-2xl font-bold mb-4">
+                                Freight <br> Forwarding
+                            </h3>
+
+                            <p class="text-gray-600 leading-7">
+                                Seamless sea, air & land freight solutions tailored to your business.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg flex flex-col relative hover:shadow-[0px_9px_30px_rgba(0,0,0,0.2)] hover:-translate-y-1 transition-all ease-in duration-200">
+                        <img src="Ship2.png" class="w-full h-52 object-cover">
+
+                        <div class="absolute left-6 top-44 w-12 h-12 rounded-full bg-lime-300 flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-diagram-project text-xl"></i>
+                        </div>
+
+                        <div class="px-6 pt-10 pb-6 flex-1">
+                            <h3 class="text-2xl font-bold mb-4">
+                                Supply Chain Solutions
+                            </h3>
+
+                            <p class="text-gray-600 leading-7">
+                                End-to-end supply chain management for efficiency, visibility and reliability.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DEALEX SECTION -->
+
+        <div class="flex">
+            <div class="bg-green-950 w-full lg:flex flex lg:flex-row flex-col">
+                <img src="deleax.jpeg" class="lg:h-[335px] lg:w-[590px] w-full h-[290px] shrink-0">
+                <div class="px-5 lg:pl-[30px] lg:pr-[30px] pt-6 pb-8 lg:pb-0">
+                    <span class="text-lime-200 font-medium text-[13px] pb-4 md:pb-0 pb-2">OUR ASSOCIATED COMPANY</span>
+                    <H2 class="font-bold text-white text-3xl md:pb-0 pb-2">Dealex Transport & Logistics Services</H2>
+                    <p class="text-white">Weldedron is proud to be associated with Dealex transport & Logistics Services(DTLS),
+                        a premier logistics company with nationwide operations and a modern fleet of 
+                        containerized and referigerated vehicles.
+                    </p>
+                    <div class="flex flex-col lg:flex-row lg:justify-evenly items-stretch lg:items-start relative mt-4 gap-4 lg:gap-2">
+                        <div class="flex items-center gap-3 md:flex-col md:items-center md:gap-1 text-white lg:border-r-2 lg:border-gray-400 lg:pr-4">
+                            <i class="fa-solid fa-warehouse text-xl md:text-2xl text-lime-300 md:text-white shrink-0"></i>
+                            <div class="md:text-center">
+                                <h4 class="font-bold text-[16px]">Dealex Own <br class="hidden md:block"> Terminal (DOT)</h4>
+                                <p class="text-[12px]">Reefer & Cold Chain Hub</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 md:flex-col md:items-center md:gap-1 text-white lg:border-r-2 lg:border-gray-400 lg:pr-4">
+                            <i class="fa-solid fa-truck-ramp-box text-xl md:text-2xl text-lime-300 md:text-white shrink-0"></i>
+                            <div class="md:text-center">
+                                <h4 class="font-bold text-[16px]">Modern Fleet <br class="hidden md:block"> of Reefer &</h4>
+                                <p class="text-[12px]">Containerized Vehicles</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 md:flex-col md:items-center md:gap-1 text-white">
+                            <i class="fa-solid fa-boxes-stacked text-xl md:text-2xl text-lime-300 md:text-white shrink-0"></i>
+                            <div class="md:text-center">
+                                <h4 class="font-bold text-[16px]">Nationwide <br class="hidden md:block"> Netwok</h4>
+                                <p class="text-[12px]">Across Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class=" border-2 border-white md:p-[8px] p-[7px] md:mt-4 mt-2.5 md:mb-0 mb-4 text-white cursor-pointer hover:bg-lime-700 md:mb-3">LEARN MORE ABOUT DEALEX →</button>
+                </div>
+            </div>
+        </div>
+        <div class="w-full border-b-2 border-b-white"></div>
+        <div class="bg-green-700 flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-[40px] relative">
+            <div>
+                <h3 class="text-2xl text-white font-bold">Let's Move Freshness Together</h3>
+                <p class="text-white mt-2 md:mt-1">Partner with Weldedron for reliable cold chain logistics,<br class="hidden md:block">
+                   fresh products exports, and seamless global connections.</p>
+            </div>
+            <div class="flex flex-wrap justify-start md:justify-end items-center gap-4 md:gap-[40px]">
+                <button class="p-[11px] font-medium hover:text-white bg-lime-400 border-2 hover:border-2 border-transparent hover:border-lime-400 hover:bg-transparent cursor-pointer">GET A Quote →</button>
+                <button class="p-[10px] text-white font-medium border-2 hover:text-black border-white hover:bg-gray-300 cursor-pointer">CONTACT US →</button>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-[#0A1F14] text-gray-300">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+
+            <!-- Logo Section -->
+            <div>
+                <img src="weldedron_logo.png" alt="Weldedron Logo" class="w-44 mb-6">
+
+                <!-- Social Icons -->
+                <div class="flex gap-3">
+                <a href="#" class="w-9 h-9 border border-gray-500 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                    <i class="fab fa-linkedin-in text-sm"></i>
+                </a>
+
+                <a href="#" class="w-9 h-9 border border-gray-500 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                    <i class="fab fa-facebook-f text-sm"></i>
+                </a>
+
+                <a href="#" class="w-9 h-9 border border-gray-500 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                    <i class="fab fa-instagram text-sm"></i>
+                </a>
+
+                <a href="#" class="w-9 h-9 border border-gray-500 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                    <i class="fab fa-youtube text-sm"></i>
+                </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h3 class="text-white font-semibold mb-4 uppercase text-sm">
+                Company
+                </h3>
+
+                <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-green-400">About Us</a></li>
+                <li><a href="#" class="hover:text-green-400">Our Network</a></li>
+                <li><a href="#" class="hover:text-green-400">Careers</a></li>
+                <li><a href="#" class="hover:text-green-400">News & Media</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-white font-semibold mb-4 uppercase text-sm">
+                Services
+                </h3>
+
+                <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-green-400">Reefer Transportation</a></li>
+                <li><a href="#" class="hover:text-green-400">Cold Storage</a></li>
+                <li><a href="#" class="hover:text-green-400">Freight Forwarding</a></li>
+                <li><a href="#" class="hover:text-green-400">Supply Chain Solutions</a></li>
+                </ul>
+            </div>
+
+            <!-- Industries -->
+            <div>
+                <h3 class="text-white font-semibold mb-4 uppercase text-sm">
+                Industries
+                </h3>
+
+                <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-green-400">Fruits & Vegetables</a></li>
+                <li><a href="#" class="hover:text-green-400">Food & Beverages</a></li>
+                <li><a href="#" class="hover:text-green-400">Pharmaceuticals</a></li>
+                <li><a href="#" class="hover:text-green-400">More Industries</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-white font-semibold mb-4 uppercase text-sm">
+                Contact Us
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+
+                <li class="flex items-center gap-2">
+                    <i class="fas fa-envelope text-green-400"></i>
+                    info@weldedron.com
+                </li>
+
+                <li class="flex items-center gap-2">
+                    <i class="fas fa-phone text-green-400"></i>
+                    +92 300 1234567
+                </li>
+
+                <li class="flex items-start gap-2">
+                    <i class="fas fa-map-marker-alt text-green-400 mt-1"></i>
+                    Lahore, Pakistan
+                </li>
+
+                </ul>
+            </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-400">
+            © 2026 Weldedron. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
